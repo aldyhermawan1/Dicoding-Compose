@@ -1,4 +1,4 @@
-package com.hermawan.composestarter.ui.theme
+package com.hermawan.composestarter.jetcoffee.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

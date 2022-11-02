@@ -1,4 +1,4 @@
-package com.hermawan.composestarter.ui.theme
+package com.hermawan.composestarter.starter.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
