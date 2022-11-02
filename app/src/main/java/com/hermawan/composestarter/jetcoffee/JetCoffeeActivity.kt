@@ -26,9 +26,9 @@ import com.hermawan.composestarter.jetcoffee.model.dummyBestSellerMenu
 import com.hermawan.composestarter.jetcoffee.model.dummyCategory
 import com.hermawan.composestarter.jetcoffee.model.dummyMenu
 import com.hermawan.composestarter.jetcoffee.ui.components.CategoryItem
+import com.hermawan.composestarter.jetcoffee.ui.components.HomeSection
 import com.hermawan.composestarter.jetcoffee.ui.components.MenuItem
 import com.hermawan.composestarter.jetcoffee.ui.components.SearchBar
-import com.hermawan.composestarter.jetcoffee.ui.components.SectionText
 import com.hermawan.composestarter.jetcoffee.ui.theme.ComposeStarterTheme
 
 class JetCoffeeActivity : ComponentActivity() {
@@ -47,12 +47,16 @@ class JetCoffeeActivity : ComponentActivity() {
 fun JetCoffeeApp() {
     Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
         Banner()
-        SectionText(title = stringResource(id = R.string.section_category))
-        CategoryRow()
-        SectionText(title = stringResource(id = R.string.section_favorite_menu))
-        MenuRow(listMenu = dummyMenu)
-        SectionText(title = stringResource(id = R.string.section_best_seller_menu))
-        MenuRow(listMenu = dummyBestSellerMenu)
+        HomeSection(
+            title = stringResource(id = R.string.section_category),
+            content = { CategoryRow() }
+        )
+        HomeSection(title = stringResource(id = R.string.section_favorite_menu), Modifier, {
+            MenuRow(listMenu = dummyMenu)
+        })
+        HomeSection(title = stringResource(id = R.string.section_best_seller_menu)) {
+            MenuRow(listMenu = dummyBestSellerMenu)
+        }
     }
 }
 
