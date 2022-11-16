@@ -3,9 +3,11 @@
     <string name="app_name_jetcoffe">JetCoffee</string>
     <string name="app_name_temperature">My Temperature Converter</string>
     <string name="app_name_navdrawer">My Nav Drawer</string>
+    <string name="app_name_heroes">JetHeroes</string>
     <string name="title_activity_jet_coffee">JetCoffeeActivity</string>
     <string name="title_activity_temperature">TemperatureActivity</string>
     <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="title_activity_heroes">HeroesActivity</string>
 
     <string name="placeholder_search">Cari kopi pilihanmu!</string>
     <string name="category_all">All</string>
@@ -39,5 +41,7 @@
     <string name="coming_soon">%s Menu is Coming Soon!</string>
     <string name="subscribe_question">Subscribe?</string>
     <string name="subscribed_info">Subscribed. You will informed when the feature is ready</string>
-    <string name="title_activity_heroes">HeroesActivity</string>
+
+    <string name="scroll_to_top">Scroll to Top</string>
+    <string name="search_hero">Cari pahlawanmu</string>
 </resources>
