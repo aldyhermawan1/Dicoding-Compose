@@ -39,4 +39,5 @@
     <string name="coming_soon">%s Menu is Coming Soon!</string>
     <string name="subscribe_question">Subscribe?</string>
     <string name="subscribed_info">Subscribed. You will informed when the feature is ready</string>
+    <string name="title_activity_heroes">HeroesActivity</string>
 </resources>
