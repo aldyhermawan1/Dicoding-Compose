@@ -15,9 +15,9 @@
         android:theme="@style/Theme.ComposeStarter"
         tools:targetApi="31">
         <activity
-            android:name=".heroes.HeroesActivity"
+            android:name=".simpletesting.SimpleTestingActivity"
             android:exported="true"
-            android:label="@string/title_activity_heroes"
+            android:label="@string/title_activity_simple_testing"
             android:theme="@style/Theme.ComposeStarter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,11 +30,19 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".heroes.HeroesActivity"
+            android:exported="true"
+            android:label="@string/title_activity_heroes"
+            android:theme="@style/Theme.ComposeStarter">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".navdrawer.NavDrawerActivity"
             android:exported="true"
             android:label="@string/title_activity_nav_drawer"
             android:theme="@style/Theme.ComposeStarter">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
